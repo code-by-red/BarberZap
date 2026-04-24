@@ -1,0 +1,30 @@
+{
+  "name": "barbercode",
+  "version": "1.0.0",
+  "description": "Sistema de agendamento para barbearias - BarberZap",
+  "main": "index.html",
+  "scripts": {
+    "start": "powershell -ExecutionPolicy Bypass -File server.ps1",
+    "dev": "powershell -ExecutionPolicy Bypass -File server.ps1",
+    "build": "echo 'Build completed - static files ready for deployment'",
+    "serve": "powershell -Command \"python -m http.server 8000 --directory .\"",
+    "deploy:vercel": "vercel --prod",
+    "preview": "vercel"
+  },
+  "keywords": [
+    "barber",
+    "agendamento",
+    "whatsapp",
+    "barbearia",
+    "sistema",
+    "booking"
+  ],
+  "author": "BarberZap",
+  "license": "MIT",
+  "devDependencies": {
+    "vercel": "^latest"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
